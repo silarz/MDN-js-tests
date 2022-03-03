@@ -29,8 +29,16 @@
     // Final result should be 10.42
     // Add/update your code here
 
-    let result = 7 + 13 / 9 + 7;
-    let result2 = 100 / 2 * 6;
+    let result = (7 + 13) / (9 + 7);        //4 .The value of finalNumber needs to be 10.42. Go back and update the original calculations you were provided with so that they give this final result. Don't update the numbers or the operators.
+    let result2 = 100 / (2 * 6);
+
+    result *= result2;                      //1. A calculation that multiplies result and result2 together and assigns the result back to result, with assignment shorthand.
+
+    let finalResult = result.toFixed(2);    //2. Takes result and formats it to 2 decimal places, storing the result of this in a variable called finalResult.
+    typeof finalResult;                     //3. Check the data type of finalResult using typeof; you'll probably see that it is actually of string type![...]
+    let finalNumber = Number(finalResult);  //[...] Write a line of code that converts it to a number type, storing the result in a variable called finalNumber.
+
+
 
     // Don't edit the code below here!
 
