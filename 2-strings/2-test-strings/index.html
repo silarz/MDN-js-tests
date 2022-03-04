@@ -31,7 +31,12 @@
 
     // Add your code here
 
-    // Don't edit the code below here!
+    let quoteLength = quote.length;                                     //1.Retrieve the length of the quote, store it in variable quoteLength.
+    let index = quote.indexOf(substring);                               //2.Find index position where substring appears in quote, store that value in variable index.
+    let revisedQuote = quote.slice(0,(index + (substring.length+1)));   //3.Trim down the original quote to "I do not like green eggs and ham.", store it in variable revisedQuote.
+    
+    quoteLength = " now " + revisedQuote.length;                        //ADDITIONAL: I updated the "quoteLenght" variable to show the length of the trimmed sentence in browser.
+                                
 
     const section = document.querySelector('section');
 
