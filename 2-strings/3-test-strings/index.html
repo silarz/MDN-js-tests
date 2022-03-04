@@ -30,6 +30,14 @@
 
     // Add your code here
 
+    let lowCase = quote.toLowerCase();                                          //1. Change the casing to correct sentence case (all lowercase,
+    let firstLetter = lowCase.slice(0,1);                                       //except for upper case first letter).
+    let fixedQuote = lowCase.replace(firstLetter, firstLetter.toUpperCase());   //Store the new quote in a variable called fixedQuote.
+    
+    fixedQuote = fixedQuote.replace('green eggs and ham', 'meat and eggs');     //2. In fixedQuote, replace "green eggs and ham" with another food that you really don't like.
+    
+    let finalQuote = fixedQuote + ".";                                          //3. Add a full stop onto the end of the quote, and save the final version in a variable called finalQuote.
+    
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
