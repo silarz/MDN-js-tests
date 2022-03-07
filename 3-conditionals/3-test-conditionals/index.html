@@ -18,20 +18,58 @@
 
   <body>
 
-    <section class="preview">
+    <h1>Test 3 - Instructions</h1>
+    <h3>(same as test 2 but uses SWITCH instead of 2nd nested if)</h3>
+      <p>Create an if...else structure that checks whether the machine is switched on and puts a message into the response variable if it isn't, telling the user to switch the machine on.</p>
+      <p>Inside the first, you need to nest a <strong>SWITCH</strong> that puts appropriate messages into the response variable depending on what the value of score is — if the machine is turned on.</p>
+      <p>The different conditional tests (and resulting responses) are as follows:</p>
+      <ul>
+          <li>Score of less than 0 or more than 100 — "This is not possible, an error has occurred."</li>
+          <li>Score of 0 to 19 — "That was a terrible score — total fail!"</li>
+          <li>Score of 20 to 39 — "You know some things, but it\'s a pretty bad score. Needs improvement."</li>
+          <li>Score of 40 to 69 — "You did a passable job, not bad!"</li>
+          <li>Score of 70 to 89 — "That\'s a great score, you really know your stuff."</li>
+          <li>Score of 90 to 100 — "What an amazing score! Did you cheat? Are you for real?"</li>
+      </ul>
+      <p>After you've entered your code, try changing machineActive to true, to see if it works.</p>
 
+    <h3>Output:</h3>
 
-
-    </section>
+    <section class="preview"></section>
 
   </body>
   <script>
     let response;
-    let score = 75;
-    let machineActive = false;
+    let score = 15;
+    let machineActive = true;
 
     if(machineActive) {
       // Add your code here
+      switch(true){
+          case (score >= 0 && score <= 19):
+          response = "That was a terrible score — total fail!";
+          break;
+
+          case (score >= 20 && score <= 39):
+          response = "You know some things, but it\'s a pretty bad score. Needs improvement.";
+          break;
+
+          case (score >= 40 && score <= 69):
+          response = "You did a passable job, not bad!";
+          break;
+
+          case (score >= 70 && score <= 89):
+          response = "That\'s a great score, you really know your stuff.";
+          break;
+
+          case (score >= 90 && score <= 100):
+          response = "YoWhat an amazing score! Did you cheat? Are you for real?";
+          break;
+
+          default:
+          response = "This is not possible, an error has occurred";
+      }
+
     } else {
       response = 'The machine is turned off. Turn it on to process your score.';
     }
