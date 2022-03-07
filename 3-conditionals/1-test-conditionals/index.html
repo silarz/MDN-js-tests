@@ -24,10 +24,21 @@
   
   
   <script>
-    let season = 'summer';
+    let season = prompt('What season is it?');
     let response;
 
     // Add your code here
+    if (season == 'summer'){
+        response = "It's sunny, it's hot, let's go to the beach!";
+    }else if(season == 'winter'){
+        response = "It's so cold. Brrrr. Let's stay home."
+    }else if(season == 'autumn'){
+        response = "Cold, grey, leaves are falling. So sad."
+    }else if(season == 'spring'){
+        response = "Colors, flowers and happines!"
+    }else{
+        response = "That's not a real season."
+    }
 
     // Don't edit the code below here!
 
