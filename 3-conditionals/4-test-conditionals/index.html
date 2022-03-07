@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Conditionals: Task 4</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+      <h1>Conditionals - Test 4 Instructions</h1>
+
+    <p>Create an if...else structure that checks whether the machine is switched on and puts a message into the machineResult variable telling the user whether it is on or off.</p>
+    <p>If the machine is on, run a second conditional that checks whether the pwd is equal to cheese. <br> If so, it should assign a string to pwdResult telling the user they logged in successfully. <br> If not, it should assign a different string to pwdResult telling the user their login attempt was not successful. <br> Do this in a single line, using something that isn't an if ... else structure.</p>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let machineActive = true;
+    let pwd = 'cheese';
+
+    let machineResult;
+    let pwdResult;
+
+    // Add your code here
+
+    pwd = prompt("Insert password:")
+
+    if(machineActive === true){
+        machineResult = "The machine is on."
+        pwd === 'cheese' ? pwdResult = "Login succesful - Welcome" : pwdResult = "Wrong password - Login failed";
+
+    }else{
+        machineResult = "The machine is off."
+    };
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+
+    para1.textContent = machineResult;
+    para2.textContent = pwdResult;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+
+</html>
