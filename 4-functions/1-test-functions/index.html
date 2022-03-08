@@ -33,7 +33,12 @@
 
     // Add your code here
 
+    function chooseName(){
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        para.textContent = randomName;                    
+    };
     
+    chooseName();
 
     // Don't edit the code below here!
 
