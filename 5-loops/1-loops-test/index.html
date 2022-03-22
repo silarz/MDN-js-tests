@@ -17,6 +17,10 @@
   </head>
 
   <body>
+    <h1>Loops: Task 1</h1>
+    <p>
+      Create a simple loop that goes through all the items in the provided myArray and prints them out on the screen inside list items (i.e., "li" elements), which are appended to the provided list.
+    </p>
 
     <section class="preview">
 
@@ -30,6 +34,13 @@
     const list = document.createElement('ul');
 
     // Add your code here
+    
+
+    for(const vegetable of myArray){                  //loop through array elements
+      const listEntry = document.createElement('li'); //create "li" element
+      listEntry.textContent = vegetable;              //add element content to created "li" element
+      list.appendChild(listEntry);                    //add created "li" element with content to list (ul)
+    }
 
     // Don't edit the code below here!
 
